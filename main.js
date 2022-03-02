@@ -5,8 +5,8 @@ let goLink = "https://tom-website.github.io/OurBookcase/"
 
 /* Log in With UserName And Password */
 // My DataBases
-let userName = ["tom", "andrew"];
-let password = ["1", "2"];
+let userName = ["admin", "Tom-website"];
+let password = ["admin", "Tom"];
 function buttonSend() {
   let inpName = document.getElementById("userName").value;
   let inpPassword = document.getElementById("password").value;

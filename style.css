@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background-color: #333;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #222;
+  border-radius: 5px;
+  width: 40%;
+  box-shadow: 1px 1px 7px 0 #000;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .parent {
+    width: 80%;
+  }
+}
+.parent .box {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.parent .box h1 {
+  text-align: center;
+  margin: 10px;
+}
+.parent .box button,
+.parent .box input {
+  outline: none;
+  border: solid 2px #540000;
+  border-radius: 70px;
+  padding: 10px;
+  color: #fff;
+  background-color: #111;
+  transition: 0.4s;
+  width: 100%;
+}
+.parent .box button:active,
+.parent .box input:active,
+.parent .box button:hover,
+.parent .box input:hover {
+  box-shadow: 0 0 8px 2px #5400009f;
+}
+.parent .box button:hover {
+  cursor: pointer;
+  background-color: #540000;
+}
+.parent .box #massge {
+  color: red;
+  font-size: 0.9rem;
+}
+.parent .box .logWith {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.parent .box .logWith:hover {
+  color: green;
+}
+.parent #OTP {
+  display: none;
+}

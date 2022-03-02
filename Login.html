@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+        <div class="box" id="user">
+          <h1>Log in</h1>
+          <input type="text" name="user" id="userName" required placeholder="Write Your Name">
+          <input type="password" name="password" id="password" required placeholder="Write Your Password">
+          <button class="send" onclick="buttonSend()" id="send">Send</button>
+          <a class="logWith" onclick="buttonShowOTP()">Log With OTP</a>
+        </div>
+        <div class="box" id="OTP">
+          <h1>Log in With OTP</h1>
+          <input type="text" name="OTP" id="inputOTP" placeholder="Write Your OTP">
+          <button class="send" onclick="buttonSendOTP()" id="sendOTP">Send</button>
+          <a class="logWith" onclick="buttonShowUser()">Log With User</a>
+        </div>
+        <span id="massge"></span>
+
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
